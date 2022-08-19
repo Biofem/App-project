@@ -7,6 +7,15 @@ h1 {
   color: blue;
   padding: 10px 10px;
 }
+.weather-temperature {
+  display: flex;
+}
+.temperature {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
 .label {
   padding: 2em;
   border-radius: 30px;
