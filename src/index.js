@@ -70,7 +70,7 @@ function convertToFahrenheit(event) {
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 17;
+  temperatureElement.innerHTML = 0;
 }
 
 let dateElement = document.querySelector("#date");
