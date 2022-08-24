@@ -7,8 +7,11 @@ h1 {
   color: blue;
   padding: 10px 10px;
 }
-.d-flex weather-temperature {
+.weather-temperature {
   display: flex;
+  
+  .d-flex {
+    display: flex!important;
 }
 .temperature {
   color: rgb(33, 33, 33);
