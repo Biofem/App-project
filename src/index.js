@@ -35,6 +35,7 @@ function showTemperature(response){
   let humidityElement = document.querySelector("#humidity");
   let windElement = ducument.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
+  let precipitationElement = document.querySelector("#precipitation");
 
   celsiusTemperature = response.data.main.temp;
 
@@ -43,6 +44,7 @@ function showTemperature(response){
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  precipitationElement.innerHTML = response.data.main.precipitation;
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -50,7 +52,7 @@ function showTemperature(response){
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
 getForecast(response.data.coord);
-console.log (temperarte)
+  
 function WeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
