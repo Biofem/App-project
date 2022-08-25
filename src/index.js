@@ -35,6 +35,7 @@ function showTemperature(response){
   let humidityElement = document.querySelector("#humidity");
   let windElement = ducument.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
+  let dateElement = document.querySelector("#date");
   let precipitationElement = document.querySelector("#precipitation");
 
   celsiusTemperature = response.data.main.temp;
@@ -44,6 +45,7 @@ function showTemperature(response){
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  dateElement.innerHTML = formatdate.data.main.dt*1000
   precipitationElement.innerHTML = response.data.main.precipitation;
   iconElement.setAttribute(
     "src",
