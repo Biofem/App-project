@@ -50,7 +50,7 @@ function showTemperature(response){
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-  getForecast(response.data.coord);
+getForecast(response.data.coord);
 console.log (temperarte)
 function WeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -58,7 +58,7 @@ function WeatherCondition(response) {
     response.data.main.temp
   );
 
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  docume.querySlector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
