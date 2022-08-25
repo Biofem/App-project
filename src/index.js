@@ -67,12 +67,13 @@ function WeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+   axios.get(apiUrl).then(weatherCondition);
 }
 
 function searchCity(city) {
   let apiKey = "2655694fc31706d03a1454b71102f1cc";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(WeatherCondition);
+  axios.get(apiUrl).then(searchCity);
 }
 
 function handleSubmit(event) {
