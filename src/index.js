@@ -60,6 +60,8 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+let currentLocationButton = document.querySelector("#fahrenheit");
+currentLocationButton.addEventListener("click", convertToFahrenheit);
 
 function convertToFahrenheit(event) {
   event.preventDefault();
