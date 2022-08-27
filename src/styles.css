@@ -7,7 +7,7 @@ h1 {
   color: blue;
   padding: 10px 10px;
 }
-.weather-temperature {
+.weather-temperature.unit {
   display: flex;
   top: -34px;
 .temperature {
