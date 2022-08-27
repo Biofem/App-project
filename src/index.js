@@ -81,10 +81,12 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
+//   ### Get the buttons to convert temperature
 let celsiusButton = document.querySelector("#celsius-link");
 let fahrenheitButton = document.querySelector("#fahrenheit-link");
 
+//   ### add onClick events to the buttons
 celsiusButton.addEventListener("click", convertToCelsius);
 fahrenheitButton.addEventListener("click", convertToFahrenheit);
 
-searchCity(Toronto);
+searchCity();
