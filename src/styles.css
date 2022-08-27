@@ -9,8 +9,8 @@ h1 {
 }
 .weather-temperature{
   display: flex;
+  position: relative;
 }
-  
 .temperature {
   color: rgb(33, 33, 33);
   font-size: 64px;
