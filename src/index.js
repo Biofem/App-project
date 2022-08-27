@@ -1,3 +1,4 @@
+let temperature = 0;
 function formatDate(date) {
   let hours = date.getHours();
   if (hours < 10) {
