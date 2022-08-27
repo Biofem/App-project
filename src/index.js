@@ -31,7 +31,6 @@ function WeatherCondition(response){
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
   document.querySelector("description").innerHTML = response.data.weather[0].main;
 }
-
 function searchCity(city) {
   let apiKey = "2655694fc31706d03a1454b71102f1cc";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
