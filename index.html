@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>Weather-App</Weather-App></title>
     <meta charset="UTF-8" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="src/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="container">
@@ -13,17 +13,12 @@
       Weather Today
     </h1>
     <div class="card">
-      <form class="search-form" id="search-form">
-          Enter name of a city
-          <input type="search" placeholder="city" autofocus="on"
-          autocomplete="off" id="city-input" class="form-control shadow-sm"
-          />
-          <input type="submit" value="Search" id="search"/>
-                <input
-                  type="submit"
-                  value="Current Location"
-                  id="current-location-button"
-                />
+    <form class="search-form" id="search-form">
+    Enter name of a city
+    <input type="search" placeholder="city" autofocus="on"
+    autocomplete="off" id="city-input" class="form-control shadow-sm"/>
+    <input type="submit" value="Search" id="search"/>
+    <input type="submit" value="Current Location" id="current-location-button"/>
           </form>
             <div class="col-4 offset-8">
               <ul class="weather-conditions">
@@ -31,29 +26,31 @@
               <li>Humidity: <span id ="humidity"</span>77%</li>
               <li>Wind: <span id = "wind"</span> 8 km/h</li></ul></div>  
     <h2 id="city">Toronto</h2>
-      <ul>
-        <li id="date">
+     <ul>
+       <li id="date">
           Monday 21:00
         </li>
         <li id="description">
-            Partly Cloudy
+         Cloudy
         </li></ul>
       <div class="row">
           <div class="col-6">
-            <div class= "d-flex weather-temperature">
+            <div class="d-flex weather-temperature">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="Cloudy icon"
-                class="float-left"/>
+                class="weather-icon float-left"
+              />
+              <div class="float-left">
                 <span class="temperature" id="temperature">0</span>
-                <div class="units"><a href="#" id="celsius-link">°C</a> | 
-                  <a href="#" id="fahrenheit-link">°F</a>
+                <span class="units">
+                  <a href="#" id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link">°F</a>
+              </div>
               </div>
             </div>
           </div>
-      </div>
-          <p>
-    <div class="Days" id="days">
+      <p>
+    <div class="Days">
         <div class="row">
           <div class="col">Sunday</div>
           <div class="col">Monday</div>
@@ -65,7 +62,7 @@
         </div></div>
       </p>
       <p>
-        <div class="Icon" id="icon">
+        <div class="Icon">
         <div class="row">
         <div class="col">☀️</div>
         <div class="col">☀️</div>
@@ -88,6 +85,7 @@
               <div class="col">27°C</div>
             </div></div>
           </p>
+          <p>
       <div class="buttons">
           <button class="btn btn-primary" type="button">Previous</button>
           <button class="btn btn-primary" type="button">Next</button>
@@ -95,8 +93,7 @@
         </div></p>
       <script src="src/index.js"></script>
       <p class="footer">
-        <a href="https://github.com/Biofem/App-project/commit/d84af7f0a0f22c985888201ddc93ce2bf7c15aa2"target="_blank">Open-source code</a>, by Abiola Soyemi
-        </a>
-      </p>    
+      <a href="https://github.com/Biofem/App-project/blob/main/index.html" target="_blank">Open-source code</a>, by Abiola Soyemi
+      </p>   
   </body>
 </html>
