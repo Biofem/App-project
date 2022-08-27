@@ -11,6 +11,7 @@ h1 {
   display: flex;
   top: -34px;
   position: relative;
+}
   
 .temperature {
   color: rgb(33, 33, 33);
