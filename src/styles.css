@@ -7,10 +7,8 @@ h1 {
   color: blue;
   padding: 10px 10px;
 }
-.weather-temperature.units {
+.d-flex weather-temperature{
   display: flex;
-  top: -34px;
-  position: relative;
 }
   
 .temperature {
