@@ -11,16 +11,6 @@ h1 {
   display: flex;
   position: relative;
 }
-.weather-forecast-temperatures {
-  font-size: 13px;
-}
-li:first-letter {
-  text-transform: capitalize;
-}
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
 .temperature {
   color: rgb(33, 33, 33);
   font-size: 64px;
