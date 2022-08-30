@@ -29,7 +29,7 @@ function WeatherCondition(response){
   temperature = Math.round(response.data.main.temp);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
-  document.querySelector("description").innerHTML = response.data.weather[0].main;
+  document.querySelector("#description").innerHTML = response.data.weather[0].main;
 }
 function searchCity(city) {
   let apiKey = "2655694fc31706d03a1454b71102f1cc";
